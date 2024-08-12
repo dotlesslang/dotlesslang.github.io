@@ -21,17 +21,17 @@
 title: dotlesslang.com
 email: developer@dotlesslang.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Website for the Dotless project, which aims to build a mobile keyboard app for the Arabic script 
-  that reduces the number of keys by using machine learning to differentiate between similar letters 
-  based on context, thereby drastically simplifying the layout and making it easier for users to type.
+  Arabic Typing Reimagined
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "dotlesslang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  dotlesslang
+markdown: GFM
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
+#  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
