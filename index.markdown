@@ -43,3 +43,6 @@ We are also planning to develop a similar app for iOS devices, as well as extend
 
 ## Contact
 `developer@dotlesslang.com`
+
+<br><br><br>
+<a href="/privacy-policy">Privacy Policy</a>
