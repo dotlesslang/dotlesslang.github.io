@@ -34,7 +34,6 @@ section.team{
     text-underline-offset: 4px;
 }
 
-/* General styles for the header */
 header.hero {
     background-color: #fffdfb;
     padding: 1.5rem 1rem;
@@ -44,10 +43,9 @@ header.hero {
     position: relative;
 }
 
-/* Flexbox layout for container */
 header.hero .container {
     display: flex;
-    justify-content: space-between; /* Aligns logo, text, and badge in one row */
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -58,7 +56,7 @@ header.hero .logo {
     position: absolute;
     width: 8rem;
     height: auto;
-    flex-shrink: 0; /* Prevents the logo from shrinking */
+    flex-shrink: 0; 
     top: 1rem;
     left: 1rem; 
 }
@@ -67,7 +65,7 @@ header.hero h1 {
     font-size: 2rem;
     color: #222;
     margin: 0;
-    flex-grow: 1; /* Allows the text to take up remaining space */
+    flex-grow: 1; 
     text-align: center;
 }
 
@@ -80,14 +78,12 @@ header.hero .github-badge img {
     right: 1rem; 
 }
 
-/* Tagline styles */
 header.hero .tagline {
     font-size: 1.4rem;
     color: #555;
     margin-top: 0.5rem;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     header.hero .container {
         flex-direction: column;
