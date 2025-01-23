@@ -38,19 +38,24 @@ header.hero {
     height: 10rem;
 }
 
-.dotless {
-    color: #a7794c; 
-    text-decoration: underline;
-    text-decoration-thickness: 3px; 
-    text-underline-offset: 4px;
-}
-
 header.hero .logo {
     position: absolute;
     top: 1rem;
-    left: 1rem; 
+    left: 1rem;
     width: 12rem; 
     height: auto;
+}
+
+header.hero .github-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+}
+
+header.hero .github-badge img {
+    height: auto;
+    width: auto;
 }
 
 header.hero h1 {
