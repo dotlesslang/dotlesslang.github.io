@@ -27,47 +27,91 @@ section.team{
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 } */
- 
+.dotless {
+    color: #a7794c; 
+    text-decoration: underline;
+    text-decoration-thickness: 3px; 
+    text-underline-offset: 4px;
+}
+
+/* General styles for the header */
 header.hero {
     background-color: #fffdfb;
-    position: relative;
-    text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    height: 10rem;
+    text-align: center;
+    position: relative;
+}
+
+/* Flexbox layout for container */
+header.hero .container {
+    display: flex;
+    justify-content: space-between; /* Aligns logo, text, and badge in one row */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 header.hero .logo {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 12rem; 
+    width: 8rem;
     height: auto;
-}
-
-header.hero .github-badge {
-    position: absolute;
+    flex-shrink: 0; /* Prevents the logo from shrinking */
     top: 1rem;
-    right: 1rem;
-    text-decoration: none;
-}
-
-header.hero .github-badge img {
-    height: auto;
-    width: auto;
+    left: 1rem; 
 }
 
 header.hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #222;
-    margin-top: 0; 
+    margin: 0;
+    flex-grow: 1; /* Allows the text to take up remaining space */
+    text-align: center;
 }
 
+header.hero .github-badge img {
+    position: absolute;
+    height: 2.5rem;
+    width: auto;
+    flex-shrink: 0;
+    top: 1rem;
+    right: 1rem; 
+}
+
+/* Tagline styles */
 header.hero .tagline {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #555;
     margin-top: 0.5rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header.hero .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header.hero .logo {
+        position: static;
+        width: 6rem;
+    }
+
+    header.hero .github-badge img {
+        position: static;
+        height: 2rem;
+    }
+
+    header.hero h1 {
+        font-size: 1.8rem;
+    }
+
+    header.hero .tagline {
+        font-size: 1.4rem;
+    }
 }
 
 section {
