@@ -28,7 +28,6 @@ github_username:  dotlesslang
 markdown: GFM
 
 # Build settings
-theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 #  - jekyll-remote-theme

@@ -167,6 +167,10 @@ video {
     margin: 1rem auto;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 30%;
+    width: 40%;
+    
+    min-width: 14rem;
+    align-items: center;
+    text-align: center;
 }
 
